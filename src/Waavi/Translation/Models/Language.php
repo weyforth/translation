@@ -1,8 +1,15 @@
 <?php namespace Waavi\Translation\Models;
 
 use Waavi\Model\WaaviModel;
+use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class Language extends WaaviModel {
+
+  /*
+   * Fix for seg fault when using Laravel 4.2
+   */
+  use SoftDeletingTrait;
+  protected $dates = ['deleted_at'];
 
   /**
    *  Table name in the database.
