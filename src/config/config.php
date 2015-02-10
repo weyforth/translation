@@ -21,6 +21,19 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Mixed Mode Precedence
+	|--------------------------------------------------------------------------
+	|
+	| In mixed mode, this option controls whether the database or filesystem takes precedence.
+	|
+	| Supported:
+	| 	'database' 		Database entries take precedence.
+	|   'filesystem'	Filesystem entries take precedence.
+	*/
+	'mixed_mode_precedence'	=>	'filesystem',
+
+	/*
+	|--------------------------------------------------------------------------
 	| Default Translation Cache
 	|--------------------------------------------------------------------------
 	|
