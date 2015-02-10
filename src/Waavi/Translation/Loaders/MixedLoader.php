@@ -50,6 +50,6 @@ class MixedLoader extends Loader implements LoaderInterface {
 		$db = $this->databaseLoader->loadRawLocale($locale, $group, $namespace);
 		$fs = $this->fileLoader->loadRawLocale($locale, $group, $namespace);
 
-		return $precedence == 'filesystem' ? array_merge($db, $fs) : array_merge($fs, $db);
+		return $precedence == 'filesystem' ? array_replace_recursive($db, $fs) : array_replace_recursive($fs, $db);
 	}
 }
