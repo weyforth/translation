@@ -78,9 +78,9 @@ class Loader implements LoaderInterface {
 	{
 		$this->app 						= $app;
 		$this->defaultLocale 	= $app['config']['app.locale'];
-		$this->cacheTimeout 	= $app['config']['waavi/translation::cache.timeout'];
-		$this->cacheEnabled		= $app['config']['waavi/translation::cache.enabled'] == 'on'
-														|| ($app['config']['waavi/translation::cache.enabled'] == 'auto' && !$app['config']['app.debug']);
+		$this->cacheTimeout 	= $app['config']['translation.cache.timeout'];
+		$this->cacheEnabled		= $app['config']['translation.cache.enabled'] == 'on'
+														|| ($app['config']['translation.cache.enabled'] == 'auto' && !$app['config']['app.debug']);
 	}
 
 	/**

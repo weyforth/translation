@@ -45,7 +45,7 @@ class MixedLoader extends Loader implements LoaderInterface {
 	{
 		$namespace = $namespace ?: '*';
 		$app = $this->app;
-		$precedence = $app['config']['waavi/translation::mixed_mode_precedence'];
+		$precedence = $app['config']['translation.mixed_mode_precedence'];
 
 		$db = $this->databaseLoader->loadRawLocale($locale, $group, $namespace);
 		$fs = $this->fileLoader->loadRawLocale($locale, $group, $namespace);

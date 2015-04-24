@@ -37,7 +37,7 @@ class FileLoaderCommand extends Command {
     $this->languageEntryProvider  = $languageEntryProvider;
     $this->fileLoader             = $fileLoader;
     $this->finder                 = new Filesystem();
-    $this->path                   = app_path().DIRECTORY_SEPARATOR.'lang';
+    $this->path                   = base_path().DIRECTORY_SEPARATOR.'resources'.DIRECTORY_SEPARATOR.'lang';
   }
 
   /**

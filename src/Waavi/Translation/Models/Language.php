@@ -8,7 +8,7 @@ class Language extends Model {
   /*
    * Fix for seg fault when using Laravel 4.2
    */
-  use SoftDeletingTrait;
+  // use SoftDeletingTrait;
   protected $dates = ['deleted_at'];
 
   /**
