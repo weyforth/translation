@@ -164,7 +164,7 @@ class Loader implements LoaderInterface {
 	 */
 	public function loadRaw($locale, $group, $namespace = null)
 	{
-		return array_merge($this->loadRawLocale($this->defaultLocale, $group, $namespace), $this->loadRawLocale($locale, $group, $namespace));
+		return array_replace_recursive($this->loadRawLocale($this->defaultLocale, $group, $namespace), $this->loadRawLocale($locale, $group, $namespace));
 	}
 
 	/**
