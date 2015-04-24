@@ -1,8 +1,8 @@
 <?php namespace Waavi\Translation\Models;
 
-use Waavi\Model\WaaviModel;
+use Illuminate\Database\Eloquent\Model;
 
-class LanguageEntry extends WaaviModel {
+class LanguageEntry extends Model {
 
   /**
    *  Table name in the database.

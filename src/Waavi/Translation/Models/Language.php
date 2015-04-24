@@ -1,9 +1,9 @@
 <?php namespace Waavi\Translation\Models;
 
-use Waavi\Model\WaaviModel;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Language extends WaaviModel {
+class Language extends Model {
 
   /*
    * Fix for seg fault when using Laravel 4.2
